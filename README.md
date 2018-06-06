@@ -1,4 +1,4 @@
-# Assignment - Hadoop Streaming
+# Assignment - Hadoop Streaming <br> Due Sunday 6/17 at 11:59pm
 
 You will be performing Hadoop Streaming exercises in this assignment. 
 
@@ -27,7 +27,7 @@ cat /mnt/var/lib/info/instance.json > master-instance.json
 cat /mnt/var/lib/info/extraInstanceData.json > extra-master-instance.json
 ```
 
-## Problem 1 - The _quazyilx_ scientific instrument (3 points)
+## Problem 1 - The _quazyilx_ scientific instrument (5 points)
 
 For this problem, you will be working with data from the _quazyilx_ instrument. The files you will use contain hypothetic measurements of a scientific instrument called a _quazyilx_ that has been specially created for this class. Every few seconds the quazyilx makes four measurements: _fnard_, _fnok_, _cark_ and _gnuck_. The output looks like this:
 
@@ -79,7 +79,7 @@ hadoop jar /usr/lib/hadoop/hadoop-streaming.jar \
 When you finish running the Hadoop Streaming jobs, you will need to extract the results from **HDFS** using `hdfs dfs -cat` and create and commit three files: `p1-1-results.txt`, `p1-2-results.txt`. **These results files must be sorted by date and time.**
 
 
-## Problem 2 - Log file analysis (7 points)
+## Problem 2 - Log file analysis (10 points)
 
 The file `s3://bigdatateaching/forensicswiki/2012_logs.txt` is a year's worth of Apache logs for the [forensicswiki website](http://forensicswiki.org/wiki/Main_Page). Each line of the log file correspondents to a single `HTTP GET` command sent to the web server. The log file is in the [Combined Log Format](https://httpd.apache.org/docs/1.3/logs.html#combined).
 
